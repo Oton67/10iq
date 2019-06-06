@@ -1,4 +1,4 @@
 # 10iq
-Projektno programiranje
+Projektno programiranje.
 
 
