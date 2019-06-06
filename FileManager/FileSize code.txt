@@ -1,0 +1,55 @@
+		private void groupBox1_Enter(object sender, System.EventArgs e)
+		{
+		
+		}
+
+		private void lstFiles_SelectedIndexChanged(object sender, System.EventArgs e)
+		{
+			try
+			{
+				lblDir.Text = tv1.SelectedNode.FullPath;
+				string path = Path.Combine(tv1.SelectedNode.FullPath, lstFiles.SelectedItem.ToString());
+				
+				FileInfo fi = new FileInfo(path);
+
+				lblFile.Text = lstFiles.SelectedItem.ToString();
+				lblSize.Text = fi.Length.ToString();
+				lblCreated.Text = fi.CreationTime.ToString();
+				lblAccess.Text = fi.LastAccessTime.ToString();
+				lblModified.Text = fi.LastWriteTime.ToString();
+				txtBox.Text = "";
+
+				StreamReader rstr = fi.OpenText();
+				string []sline = new string[65535];
+
+				// max lines a text box can hold
+
+				int count = 0;
+
+				if (rstr != null)
+				{
+					count = 0;
+					sline[count++] = rstr.ReadLine();
+					while (sline[count-1] != null)
+					{                              
+						sline[count++] = rstr.ReadLine();
+						if (count >= 65536) break;
+					}
+					rstr.Close();
+
+					string []finalSize = new string[count];
+
+					// find exact size of line array otherwise blank
+
+					// blank lines will show up in editor
+
+					for (int i = 0; i < count; i++)
+
+						finalSize[i]=sline[i];
+
+					txtBox.Lines = finalSize;
+
+				}
+			}
+			catch{}
+		}

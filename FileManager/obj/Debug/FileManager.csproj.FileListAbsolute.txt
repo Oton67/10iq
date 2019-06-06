@@ -1,0 +1,8 @@
+C:\Users\Kiki\Desktop\OOP2Projekt\New folder\bin\Debug\FileCompression.exe
+C:\Users\Kiki\Desktop\OOP2Projekt\New folder\bin\Debug\FileCompression.pdb
+C:\Users\Kiki\Desktop\OOP2Projekt\New folder\obj\Debug\FileManager.csprojAssemblyReference.cache
+C:\Users\Kiki\Desktop\OOP2Projekt\New folder\obj\Debug\FileCompression.Form1.resources
+C:\Users\Kiki\Desktop\OOP2Projekt\New folder\obj\Debug\FileManager.csproj.GenerateResource.cache
+C:\Users\Kiki\Desktop\OOP2Projekt\New folder\obj\Debug\FileManager.csproj.CoreCompileInputs.cache
+C:\Users\Kiki\Desktop\OOP2Projekt\New folder\obj\Debug\FileCompression.exe
+C:\Users\Kiki\Desktop\OOP2Projekt\New folder\obj\Debug\FileCompression.pdb
